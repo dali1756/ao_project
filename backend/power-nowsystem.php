@@ -190,7 +190,6 @@
 								$mode       = $mode_map[$v['mode']];
 								$mode_220   = $mode_map[$v["mode_220"]];
 								$powerstaus = $v["powerstaus"];
-
 								$staus_on   = "";
 								$staus_off  = "";
 								// 100v
