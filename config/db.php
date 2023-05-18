@@ -3,8 +3,8 @@ define('CONFIG_PATH', __DIR__);
 require_once(CONFIG_PATH . "/class.func.php");
 $web_title = "【AOTECH】智慧學校平台 ";
 
-define('WEBADMIN', 'aoadmin');
-define('DEF_PWD',  '88888');
+define('WEBADMIN', '');
+define('DEF_PWD',  '');
 
 define('IDENTITY_USER',  '0');
 define('IDENTITY_ADMIN', '1');
@@ -55,10 +55,10 @@ function db_conn()
 	foreach($lines as $k => $newline){
 		$PDODBpasswordVar = $newline;
 	}
-	$PDOHostVar       = '139.177.186.94:3306';
+	$PDOHostVar       = '';
 	$PDODBnameVar     = 'ntut_db_new';
-	$PDODBuserVar     = 'barry';
-	$PDODBpasswordVar = '1qaz!@#$W';
+	$PDODBuserVar     = '';
+	$PDODBpasswordVar = '';
 
 	try {   
 		$PDOLink = new PDO("mysql:host={$PDOHostVar};dbname={$PDODBnameVar}",$PDODBuserVar,$PDODBpasswordVar);  
